@@ -1,0 +1,31 @@
+[
+    {
+      "titulo": "¿Por qué el sombrero Seleccionador se equivocó de casa con Severus Snape",
+      "subtitulo": "Severus ¿Héroe o Villano?",
+      "texto": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut totam error impedit, omnis eaque delectus neque sint suscipit quos nulla modi nostrum. Qui enim aliquam dignissimos consectetur voluptate nisi dolor.",
+      "categoria": "Slytherin, Potter",
+      "foto": "Severus.png"
+    },
+    {
+      "titulo": "La historia detrás de la Diadema perdida",
+      "subtitulo": "¿Quién es el barón sanguinario?",
+      "texto": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut totam error impedit, omnis eaque delectus neque sint suscipit quos nulla modi nostrum. Qui enim aliquam dignissimos consectetur voluptate nisi dolor.",
+      "categoria": "Ravencalw, Slytherin",
+      "foto": "Helena.png"
+    },
+    {
+      "titulo": "Petunia, ¿Un personaje incomprendido?",
+      "subtitulo": "Como afrontamos el abandono",
+      "texto": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut totam error impedit, omnis eaque delectus neque sint suscipit quos nulla modi nostrum. Qui enim aliquam dignissimos consectetur voluptate nisi dolor.",
+      "categoria": "Muggle",
+      "foto": "Petunia.png"
+    },
+    {
+      "titulo": "Petunia, ¿Un personaje incomprendido?",
+      "subtitulo": "Como afrontamos el abandono",
+      "texto": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut totam error impedit, omnis eaque delectus neque sint suscipit quos nulla modi nostrum. Qui enim aliquam dignissimos consectetur voluptate nisi dolor.",
+      "categoria": "Muggle",
+      "foto": "Petunia.png"
+    }    
+  ]
+    
