@@ -1,13 +1,12 @@
 import React, { useContext } from 'react';
-import { Link, Outlet } from 'react-router-dom';
 import { AuthContext } from '../Components/utils/AuthContext';
-import Profile from '../Components/Profile';
+// import Profile from '../Components/Profile';
 import { AppBar, Toolbar, IconButton, Menu, MenuItem } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
+// import MenuIcon from '@mui/icons-material/Menu';
 import PropTypes from 'prop-types';
-import useScrollTrigger from '@mui/material/useScrollTrigger';
-import { Slide } from '@mui/material';
-import '../Styles/Header.css';
+// import useScrollTrigger from '@mui/material/useScrollTrigger';
+// import { Slide } from '@mui/material';
+// import '../Styles/Header.css';
 
 function ElevationScroll(props) {
   const { children, window } = props;
