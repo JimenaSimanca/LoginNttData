@@ -29,15 +29,11 @@ const Home = () => {
           <h1>Casas de Hogwarts</h1>
           <h4 className="size">Todo sobre las casas del colegio más famoso de Magia y Hechicería</h4>
         </div>
+        
       <div className='category-section'>
+        
         <Grid container justifyContent="space-evenly" alignItems="center">
-            {/* Aqui renderiza las cards cuando conecte a la base de datos */
-             context.categories.map((category) => (
-              <Link className='decoration' to={`catdetails/${category.categoryId}`} >
-                  <Category categoryName={category.categoryName} image={category.image.urlImage}/>
-              </Link>
-              ))
-            }
+            
         </Grid> 
       </div>
 
@@ -46,8 +42,8 @@ const Home = () => {
 
         <section className="categories">
           <div className="category">
-          <h1>Nuestros servicios</h1>
-          <h4 className="service-size">Conoce nuestros servicios de relajación y aventura para disfrutar de la naturaleza</h4>
+          <h1>Temas de interés</h1>
+          <h4 className="service-size">Si eres un Muggles, ¡Esto te interesa!</h4>
           </div>
           <div className='service-section' >
           <Grid container spacing={4}>
@@ -61,9 +57,29 @@ const Home = () => {
                 />
               ))}
              </Grid> 
+        
             </div>
         </section>
-    
+        <section className="categories">
+          <div className="category">
+          <h1>Noticias</h1>
+          <h4 className="service-size">Entérate de todo lo que ocurre en el mundo mágico</h4>
+          </div>
+          <div className='service-section' >
+          <Grid container spacing={4}>
+              {context.experiences.map((experience) => (
+                <Experience
+                  key={experience.experienceId}
+                  experienceId={experience.experienceId}
+                  experienceName={experience.experienceName}
+                  description={experience.description}
+                  image={experience.experienceImageList[0]?.image?.urlImage} // Accessing the 'urlImage' property
+                />
+              ))}
+             </Grid> 
+        
+            </div>
+        </section>
     </>
   )
 }
