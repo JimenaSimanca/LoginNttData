@@ -13,9 +13,10 @@ function CardBlog({ foto, titulo, subtitulo, texto, categoria }) {
         <Typography gutterBottom variant='h5' component='div'>
           {titulo}
         </Typography>
-        <Typography variant='body1'>{subtitulo}</Typography>
+        <Typography variant='body1' style={{fontWeight:'600', color: '#a000e5de'}}> Categoría: {categoria}</Typography>
+        <Typography variant='body1' style={{fontWeight:'600'}}>{subtitulo}</Typography>
         <Typography variant='body1'>{texto}</Typography>
-        <Typography variant='body1'>{categoria}</Typography>
+        
       </CardContent>
     </Card>
   );

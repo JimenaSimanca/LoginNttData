@@ -6,6 +6,7 @@ import MyNotes from './Routes/MyNotes';
 import Login from './Routes/Login';
 import Home from './Components/Home';
 import { UserProvider } from './Context/UserProvider'; 
+import Search from './Components/Search';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route path='/MyNotes' element={<MyNotes />} />
             <Route path='Routes/AddNote' element={<AddNote />} />
             <Route path='/Home' element={<Home />} />
+            <Route path='/Search' element={<Search />} />
           </Routes>
         </div>
       </div>

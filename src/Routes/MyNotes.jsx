@@ -4,7 +4,7 @@ import '../Styles/style-home.css'
 import CardBlog from '../Components/CardBlog'
 
 
-const MisNotas = () => {
+const MyNotes = () => {
 
   const [data, setData] = useState([]);
 
@@ -31,4 +31,4 @@ useEffect(() => {
   )
 }
 
-export default MisNotas
+export default MyNotes

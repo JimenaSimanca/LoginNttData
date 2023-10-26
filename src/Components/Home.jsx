@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import CardBlog from './CardBlog';
 import '../Styles/style-home.css';
+import { Link } from 'react-router-dom';
 
 function Home({ user, setUser }) {
   const [data, setData] = useState([]);
@@ -34,7 +35,9 @@ function Home({ user, setUser }) {
           />
         ))}
       </div>
-      <button onClick={handleLogout}>Cerrar Sesión</button>
+      <button onClick={handleLogout}>
+      <Link className='menu-link' to='/'>Cerrar sesion</Link>
+      </button>
     </div>
   );
 }
