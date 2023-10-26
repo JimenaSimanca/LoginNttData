@@ -1,6 +1,6 @@
-export const routes = {
-    home: "/home",
-    login: "/login",
-    detail: "/detail",
-    dashboard: "/dashboard",
-  };
+// export const routes = {
+//     home: "/home",
+//     login: "/login",
+//     detail: "/detail",
+//     dashboard: "/dashboard",
+//   };

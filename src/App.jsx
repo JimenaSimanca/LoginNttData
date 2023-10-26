@@ -1,25 +1,30 @@
-import './App.css'
-import Footer from "./Components/Footer";
-import Home from "./Routes/Home";
-import Login from "./Routes/Login";
-import Detail from "./Routes/Detail";
-import Dashboard from "./Routes/Dashboard";
-import { routes } from "./routes.js";
+import { BrowserRouter, Route, Routes } from 'react-router-dom'; 
+import './App.css';
+import Navbar from './Components/Navbar';
+import AddNote from './Routes/AddNote';
+import MyNotes from './Routes/MyNotes';
+import Login from './Routes/Login';
+import Home from './Components/Home';
+import { UserProvider } from './Context/UserProvider'; 
+
 
 function App() {
   return (
-    <div className="App">
+    <UserProvider>
       <Navbar />
-      <reactRouterDom.Routes>
-        <reactRouterDom.Route path={routes.home} element={<Home />} />
-        <reactRouterDom.Route path={routes.login} element={<Login />} />
-        <reactRouterDom.Route path={routes.detail} element={<Detail />} />
-        <reactRouterDom.Route path={routes.dashboard} element={<Dashboard />} />
-      </reactRouterDom.Routes>
-      <Footer />
-    </div>
+      <div>
+        
+        <div className='Content'>
+          <Routes> 
+            <Route path='/' element={<Login />} />
+            <Route path='Routes/MyNotes' element={<MyNotes />} />
+            <Route path='Routes/AddNote' element={<AddNote />} />
+            <Route path='/Home' element={<Home />} />
+          </Routes>
+        </div>
+      </div>
+    </UserProvider>
   );
 }
 
-export default App;
-
+export default App;

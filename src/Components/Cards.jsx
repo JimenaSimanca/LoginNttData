@@ -1,32 +1,34 @@
-const data = "./src/api.json";
+import React, { useEffect, useState } from 'react';
 
-function Card({ item }) {
-    return (
-      <div className="card">
-        <img src={item.foto} alt="Imagen" />
-        <div className="card-body">
-          <h3>{item.titulo}</h3>
-          <h4>{item.subtitulo}</h4>
-          <p>{item.texto}</p>
-        </div>
-      </div>
-    );
-  }
+function Card() {
+  const [data, setData] = useState([]);
 
-  function App() {
-    const data = ["./src/api.json"];
-  
-    return (
-      <div>
-        <div className="card-container">
-          {data.map((item, index) => (
-            <Card key={index} item={item} />
-          ))}
+  useEffect(() => {
+    
+    fetch('./src/api.json') 
+      .then((response) => response.json())
+      .then((json) => setData(json))
+      .catch((error) => console.error('Error:', error));
+  }, []);
+
+  return (
+    <div>
+      
+      {data.map((item) => (
+        <div key={item.id} className="card">
+          <img src={item.foto} alt="Imagen" />
+          <div className="card-body">
+            <h3>{item.titulo}</h3>
+            <h4>{item.subtitulo}</h4>
+            <p>{item.texto}</p>
+            <p>Categoría: {item.categoria}</p>
+          </div>
         </div>
-      </div>
-    );
-  }
-  
-  export default App;
+      ))}
+    </div>
+  );
+}
+
+export default Card;
 
   
