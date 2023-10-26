@@ -16,7 +16,7 @@ const Navbar = () => {
           <SearchIcon />
         </IconButton>
         <Link className='menu-link' to='/Home'>Home</Link>
-        <Link className='menu-link' to='Routes/MyNotes'>My Notes</Link>
+        <Link className='menu-link' to='/MyNotes'>My Notes</Link>
         <Button variant="outlined" size="small" >
         <Link className='menu-link' to='Routes/AddNote'>Add Notes</Link>
         </Button>
