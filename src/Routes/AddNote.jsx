@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import '../Styles/style-home.css'
 
 function AddNote() {
   const [title, setTitle] = useState('');
@@ -33,7 +34,7 @@ function AddNote() {
 
   return (
     <section>
-      <form ref={formRef} onSubmit={handleSubmit}>
+      <form className='form' ref={formRef} onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="Título"
@@ -72,4 +73,3 @@ function AddNote() {
 }
 
 export default AddNote;
-  

@@ -1,9 +1,13 @@
 import React from 'react'
+import '../Styles/style-home.css'
+import CardBlog from '../Components/CardBlog'
 
-const MyNotes = () => {
+const MisNotas = () => {
   return (
-    <div>MyNotes</div>
+    <div className='grid'>
+      <CardBlog/>
+    </div>
   )
 }
 
-export default MyNotes
+export default MisNotas

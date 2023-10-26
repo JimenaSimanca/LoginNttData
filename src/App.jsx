@@ -13,11 +13,10 @@ function App() {
     <UserProvider>
       <Navbar />
       <div>
-        
         <div className='Content'>
           <Routes> 
             <Route path='/' element={<Login />} />
-            <Route path='Routes/MyNotes' element={<MyNotes />} />
+            <Route path='/MyNotes' element={<MyNotes />} />
             <Route path='Routes/AddNote' element={<AddNote />} />
             <Route path='/Home' element={<Home />} />
           </Routes>

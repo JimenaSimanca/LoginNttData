@@ -1,16 +1,26 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Toolbar from '@mui/material/Toolbar';
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import SearchIcon from '@mui/icons-material/Search';
+import '../Styles/style-home.css'
+
 
 const Navbar = () => {
   return (
+    
     <nav className="navbar">
-        <Link to="/" className='logo'><h1>Wizard Blog</h1></Link>
-        <ul className='menu'>
-            <li><Link className='menu-link' to='/'>Home</Link></li>
-            <li><Link to="./Routes/MyNotes">Mis Notas</Link></li>
-            <li><Link to="./Routes/AddNote">Agregar Notas</Link></li>
-            <li><Link to="./Routes/Logout">Salir</Link></li>
-        </ul>
+          <Toolbar >
+        <IconButton >
+          <SearchIcon />
+        </IconButton>
+        <Link className='menu-link' to='/Home'>Home</Link>
+        <Link className='menu-link' to='Routes/MyNotes'>My Notes</Link>
+        <Button variant="outlined" size="small" >
+        <Link className='menu-link' to='Routes/AddNote'>Add Notes</Link>
+        </Button>
+      </Toolbar>
     </nav>
   )
 }
